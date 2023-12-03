@@ -16,14 +16,26 @@
             <a href="#"><li>Home</li></a>
             <a href="#"><li>Contatos</li></a>
             <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Pedidos</li></a>
+            <a href="#linkPedidos"><li>Pedidos</li></a>
+            <a href="#"><li>Carrinho</li></a>
         </nav>
     </div>
+    <a href="#" class="aCart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+    </a>
+    <a href="#" class="aUp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+        </svg>
+    </a>
     <div id="menu2">
         <a href="#"><li>Home</li></a>
         <a href="#"><li>Contatos</li></a>
         <a href="#"><li>Sobre</li></a>
-        <a href="#"><li>Pedidos</li></a>
+        <a href="#linkPedidos"><li>Pedidos</li></a>
+        <a href="#"><li>Carrinho</li></a>
         <svg id="menuClose" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
         </svg>
@@ -60,24 +72,107 @@
             <div class="titleOpcao">Milk Shakes</div>
         </div>
     </div>
-    <span class="App">
+    <div class="App">
         <img src="img/715b647fb38d41c08a9779cb1f503a38.png" class="imgApp">
         <div class="containerApp">
             <div class="fundoApp">&nbsp;</div>
             <div class="titleApp">Baixe o nosso App e faça<br> seu pedido!</div>
             <img src="img/Google-et-Apple-dans-le-viseur-de-l-Open-App-Markets-Act.png" class="btnPlayStore">
         </div>
-    </span>
-    <span class="App2">
-        <img src="img/715b647fb38d41c08a9779cb1f503a38.png" class="imgApp2">
-        <div class="containerApp2">
-            <div class="fundoApp2">&nbsp;</div>
-            <div class="titleApp2">Baixe o nosso App e faça<br> seu pedido!</div>
-            <img src="img/Google-et-Apple-dans-le-viseur-de-l-Open-App-Markets-Act.png" class="btnPlayStore2">
+    </div>
+    <div class="quemSomosContainer">
+        <div class="col">
+            <div class="quemText">Quem Somos</div>
+            <div class="quemSubText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi iste incidunt porro dolorum maiores nobis officia minus excepturi voluptatem pariatur numquam, hic, mollitia provident, ad illo commodi explicabo voluptatibus obcaecati.</div>
+            <button class="btnQuem">Saiba Mais</button>
         </div>
-    </span>
-    <img src="img/Google-et-Apple-dans-le-viseur-de-l-Open-App-Markets-Act.png" class="btnPlayStore3">
+        <div class="col">
+            <img src="img/Pizza_PNG_Transparente_Grande_Fatias_Sem_Fundo.png" class="imgSobre">
+        </div>
+    </div>
+    <br id="linkPedidos">
+    <div class="title" id="titlePedidos">Pedidos</div>
+    <div id="products">
+        <div class="cardProduct">
+            <img src="img/pz1.png" class="cardProductImg">
+            <div class="titleCardProd">Calabresa Família</div>
+            <div class="preco">R$ 44,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/pz2.png" class="cardProductImg">
+            <div class="titleCardProd">Calabresa<br>Média</div>
+            <div class="preco">R$ 32,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/pz3.png" class="cardProductImg">
+            <div class="titleCardProd">Mussarela Família</div>
+            <div class="preco">R$ 39,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/coca.png" class="cardProductImg">
+            <div class="titleCardProd">Coca-Cola 2 Litros</div>
+            <div class="preco">R$ 9,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/xtudo.png" class="cardProductImg">
+            <div class="titleCardProd">X-Tudo Completo</div>
+            <div class="preco">R$ 11,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/frita.png" class="cardProductImg">
+            <div class="titleCardProd">Batata Frita Grande</div>
+            <div class="preco">R$ 8,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/frita_p.png" class="cardProductImg">
+            <div class="titleCardProd">Batata Frita Pequena</div>
+            <div class="preco">R$ 4,50</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/milk.png" class="cardProductImg">
+            <div class="titleCardProd">Milk Shake Morango</div>
+            <div class="preco">R$ 9,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/bolo.png" class="cardProductImg">
+            <div class="titleCardProd">Bolo de Chocolate</div>
+            <div class="preco">R$ 49,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/guarana.png" class="cardProductImg">
+            <div class="titleCardProd">Guarana Antartica 1,5L</div>
+            <div class="preco">R$ 6,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/brigadeiro.png" class="cardProductImg">
+            <div class="titleCardProd">Cento Brigadeiro</div>
+            <div class="preco">R$ 37,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+        <div class="cardProduct">
+            <img src="img/salgadinho.png" class="cardProductImg">
+            <div class="titleCardProd">Cento Salgadinho</div>
+            <div class="preco">R$ 26,90</div>
+            <button class="btnProd">Eu Quero</button>
+        </div>
+    </div>
+    <div class="title" id="titlePedidos">Doces</div>
+    <iframe src="galery/index.html" frameborder="0" class="iframeGalery"></iframe>
 
-    <br><br><br><br>
+    <footer>
+        Rodapé
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+    </footer>
 </body>
 </html>
