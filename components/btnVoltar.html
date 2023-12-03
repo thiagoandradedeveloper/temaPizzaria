@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        #btnTopo{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 10;
+            cursor: pointer;
+            display: none;
+
+            --tamanho: 60px;
+            width: var(--tamanho);
+            height: var(--tamanho);
+        }
+    </style>
+</head>
+<body>
+    <img src="img/JumpBtn.png" id="btnTopo">
+    <script>
+        let btnTopo = document.getElementById("btnTopo");
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;    
+            if(scrollPosition > 300){
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        });
+        btnTopo.onclick = () => {
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>
